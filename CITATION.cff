@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Every odd antihole is strongly chromatic-choosable"
+type: software
+authors:
+  - family-names: Bhattacharjee
+    given-names: Deep
+    orcid: "https://orcid.org/0000-0003-0466-750X"
+    affiliation: "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India"
+    email: itsdeep@live.com
+  - family-names: Bhattacharya
+    given-names: Ushashi
+    orcid: "https://orcid.org/0009-0002-2254-3914"
+    affiliation: "Formerly, National Taiwan University, Taipei 106319, Taiwan"
+    email: rai.bhattacharya.in@gmail.com
+version: 1.0.0
+date-released: 2026-10-15
+license: MIT
+repository-code: "https://github.com/creelie/odd-antihole"
+keywords:
+  - list colouring
+  - odd antihole
+  - chromatic-choosability
+  - critical graph
+  - odd hole
+  - Lean 4
+abstract: >-
+  We prove the complete Fiujlaali-McDonald conjecture on odd antiholes
+  unconditionally: for every l >= 3 the only assignments of (l-1)-element
+  lists from which the odd antihole on 2l-1 vertices cannot be coloured are
+  the constant ones. Consequently, an odd-hole-free k-critical graph of
+  maximum degree D containing an odd antihole of length 2(D-k)+7 is that
+  antihole. The main theorem is checked in the Lean 4 kernel.
+references:
+  - type: article
+    title: "Restricting odd antiholes in critical graphs via list coloring"
+    authors:
+      - family-names: Fiujlaali
+        given-names: A.
+      - family-names: McDonald
+        given-names: J.
+    year: 2026
+    url: "https://arxiv.org/abs/2610.14241"
+    notes: "arXiv:2610.14241v1, Conjectures 3 and 9"
