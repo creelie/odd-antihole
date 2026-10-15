@@ -1,0 +1,40 @@
+{
+  "title": "Every odd antihole is strongly chromatic-choosable: paper, Lean 4 formalization and verification code",
+  "description": "<p>We prove Conjecture 9 of A. Fiujlaali and J. McDonald (arXiv:2610.14241): for every l &gt;= 3 the odd antihole on 2l-1 vertices, the complement of the cycle of length 2l-1, is strongly l-chromatic-choosable, that is, its chromatic number is l and the only assignments of lists of size l-1 from which it cannot be coloured are the constant ones. With their Theorem 10 this proves their Conjecture 3: an odd-hole-free k-critical graph of maximum degree D containing an odd antihole of length 2(D-k)+7 is that antihole.</p><p><code>preprintOddAntiholeConjecture/</code> holds the paper as a PDF; <code>paper/</code> holds the LaTeX source (amsart) with four schematic figures; <code>dist/</code> holds the PDF, the LaTeX source zip and the arXiv tarball; <code>MasterOddAntiholeConjecture_masterzipfinal2.zip</code> holds every file of the repository. <code>lean/</code> is a Lean 4 and Mathlib project that proves the main theorem <code>odd_antihole_strongly_chromatic_choosable</code> together with every lemma it rests on (Hall's theorem in the form used, the Erdos-Rubin-Taylor lemma, the key lemma on a single path, the path theorem for odd linear forests and the cycle theorem); it depends only on the axioms propext, Classical.choice and Quot.sound. <code>checks/</code> contains independent checks in C, C++, Julia and Python; the C check examines every assignment of lists of size l-1, up to renaming the colours, for l = 3 (4,900 assignments) and l = 4 (7,897,749,769 assignments). <code>scripts/run_all.sh</code> builds the Lean project, checks the axioms and runs the checks. The deduction of Conjecture 3 follows Fiujlaali and McDonald and is proved by hand in the paper.</p>",
+  "upload_type": "software",
+  "license": "mit",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Bhattacharjee, Deep",
+      "orcid": "0000-0003-0466-750X",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India"
+    },
+    {
+      "name": "Bhattacharya, Ushashi",
+      "orcid": "0009-0002-2254-3914",
+      "affiliation": "Formerly, National Taiwan University, Taipei 106319, Taiwan"
+    }
+  ],
+  "keywords": [
+    "list colouring",
+    "odd antihole",
+    "chromatic-choosability",
+    "critical graph",
+    "odd hole",
+    "Lean 4",
+    "05C15",
+    "05C17",
+    "05C38"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "arXiv:2610.14241",
+      "relation": "references",
+      "scheme": "arxiv"
+    }
+  ],
+  "language": "eng",
+  "version": "1.0.0",
+  "notes": "Corresponding author: Deep Bhattacharjee, itsdeep@live.com (primary), d.bhattacharjee@erl-forschung.de. Ushashi Bhattacharya: rai.bhattacharya.in@gmail.com."
+}

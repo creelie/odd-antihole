@@ -1,0 +1,11 @@
+l = 3: 4900 assignments with at most 10 colours, 1 constant, 0 failures
+l = 4: 7897749769 assignments with at most 21 colours, 1 constant, 0 failures
+l = 5: constant lists of size 4 not colourable, of size 5 colourable; 100000 random assignments, 0 failures
+l = 6: constant lists of size 5 not colourable, of size 6 colourable; 100000 random assignments, 0 failures
+l = 7: constant lists of size 6 not colourable, of size 7 colourable; 100000 random assignments, 0 failures
+l = 8: constant lists of size 7 not colourable, of size 8 colourable; 100000 random assignments, 0 failures
+C check passed
+
+real	14m9.505s
+user	13m57.547s
+sys	0m0.495s
