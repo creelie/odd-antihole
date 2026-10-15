@@ -4,7 +4,7 @@ Authors: Deep Bhattacharjee (corresponding author, ORCID 0000-0003-0466-750X)
 and Ushashi Bhattacharya (ORCID 0009-0002-2254-3914).
 
 - Paper: https://github.com/creelie/odd-antihole/blob/main/preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf
-- Lean formalisation and code: Zenodo DOI added after release v1.0.0
+- Lean formalisation and code: Zenodo, release v1.0.0, https://doi.org/10.5281/zenodo.23393861 (all versions: https://doi.org/10.5281/zenodo.23393860)
 - Repository: https://github.com/creelie/odd-antihole
 
 ## Result

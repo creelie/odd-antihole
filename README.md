@@ -6,7 +6,8 @@ itsdeep@live.com, d.bhattacharjee@erl-forschung.de) and Ushashi Bhattacharya
 
 The paper: [`preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf`](preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf).
 Everything in one file: [`MasterOddAntiholeConjecture_masterzipfinal2.zip`](https://github.com/creelie/odd-antihole/raw/main/MasterOddAntiholeConjecture_masterzipfinal2.zip).
-Lean formalization and programs on Zenodo: the DOI is added here once release v1.0.0 is archived.
+Lean formalization and programs on Zenodo: release v1.0.0, doi:[10.5281/zenodo.23393861](https://doi.org/10.5281/zenodo.23393861);
+all versions, doi:[10.5281/zenodo.23393860](https://doi.org/10.5281/zenodo.23393860).
 
 A. Fiujlaali and J. McDonald (*Restricting odd antiholes in critical graphs
 via list coloring*, [arXiv:2610.14241](https://arxiv.org/abs/2610.14241))
