@@ -1,7 +1,10 @@
 # AI provenance: Every odd antihole is strongly chromatic-choosable
 
-Authors: Deep Bhattacharjee (corresponding author, ORCID 0000-0003-0466-750X)
-and Ushashi Bhattacharya (ORCID 0009-0002-2254-3914).
+Authors: Deep Bhattacharjee (corresponding author, ORCID 0000-0003-0466-750X;
+formerly EGSPL, Bhubaneswar, Odisha 751030, India, and formerly University of
+Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal,
+India) and Ushashi Bhattacharya (ORCID 0009-0002-2254-3914; formerly National
+Taiwan University, Taipei 106319, Taiwan).
 
 - Paper: https://github.com/creelie/odd-antihole/blob/main/preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf
 - Lean formalisation and code: Zenodo, release v1.0.0, https://doi.org/10.5281/zenodo.23393861 (all versions: https://doi.org/10.5281/zenodo.23393860)
@@ -30,7 +33,10 @@ Claude Code under his direction, produced the following:
 - the Lean 4 formalisation;
 - the checking programs in C, C++, Python and Julia;
 - the figures;
-- the LaTeX text of the paper.
+- the LaTeX text of the paper, its footnotes and its reference list (every
+  reference, the three self-citations included, was checked against the
+  publisher's or Crossref's record);
+- this file and the submission notes.
 
 No other AI system took part. Section 6 reproduces the argument of Fiujlaali
 and McDonald (their Theorem 10) and credits it to them.
@@ -57,6 +63,9 @@ and McDonald (their Theorem 10) and credits it to them.
 ## What is not claimed
 
 The deduction of Conjecture 3 in Section 6 is proved by hand and is not
-formalised in Lean. The authors checked on 15 October 2026 that the conjecture
-appears as open in version 1 of the preprint of Fiujlaali and McDonald
-(9 October 2026), and found no other proof on arXiv, on GitHub or on the web.
+formalised in Lean. The authors checked on 15 October 2026, and again on
+17 October 2026, that the conjecture appears as open in version 1 of the
+preprint of Fiujlaali and McDonald (9 October 2026), and found no other proof
+on arXiv, on GitHub or on the web. No statement of the paper rests on a
+floating-point computation, and nothing beyond Conjectures 9 and 3 of
+Fiujlaali and McDonald is claimed.

@@ -1,8 +1,10 @@
 # Every odd antihole is strongly chromatic-choosable
 
 Authors: Deep Bhattacharjee (corresponding author; ORCID 0000-0003-0466-750X;
-itsdeep@live.com, d.bhattacharjee@erl-forschung.de) and Ushashi Bhattacharya
-(ORCID 0009-0002-2254-3914; rai.bhattacharya.in@gmail.com).
+itsdeep@live.com, d.bhattacharjee@erl-forschung.de; formerly EGSPL, Bhubaneswar,
+and formerly University of Calcutta, Senate House, 87/1 College Street, Kolkata
+700073) and Ushashi Bhattacharya (ORCID 0009-0002-2254-3914;
+rai.bhattacharya.in@gmail.com; formerly National Taiwan University).
 
 The paper: [`preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf`](preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf).
 Everything in one file: [`MasterOddAntiholeConjecture_masterzipfinal2.zip`](https://github.com/creelie/odd-antihole/raw/main/MasterOddAntiholeConjecture_masterzipfinal2.zip).
