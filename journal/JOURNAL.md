@@ -36,10 +36,16 @@ MSC 2020: primary 05C15; secondary 05C17, 05C38.
   (`thebibliography`), so no `.bib` or `.bbl` file is needed.
   `dist/OddAntiholeConjecture_final2-tex.zip` (7 entries) and the arXiv
   tarball contain this file and the figures as PNG.
-- Declarations at the end: "Acknowledgements" (use of AI), "Competing
-  interests: None", "Funding: None" and "Data availability" (who computed
-  what, the Zenodo DOI of the Lean formalization and the link to the PDF in
-  `preprintOddAntiholeConjecture/`).
+- Declarations at the end: "Data and code availability" (the Zenodo DOI of
+  the source, the Lean formalization and the programs, the link to the PDF in
+  `preprintOddAntiholeConjecture/`, and who did what, with the AI assistance
+  named there) and "Ethical declarations" (Funding: none. Competing
+  interests: none). There is no separate AI section.
+- Three self-citations, each verified on Crossref, in footnotes tied to the
+  places where they bear on the text: 10.9734/arjom/2022/v18i11615 (Cayley
+  graphs and word metrics), 10.20944/preprints202606.1351.v2 (intersection
+  patterns of set families, with Ushashi Bhattacharya) and
+  10.2139/ssrn.6194939 (local-to-global gluing on networks).
 - Wiley's pages returned HTTP 403 to the session that prepared this file, so
   the details above come from search results quoting those pages; read the
   author guidelines once more before submitting.
@@ -50,8 +56,8 @@ MSC 2020: primary 05C15; secondary 05C17, 05C38.
   be an author, since it cannot take responsibility for the work, and asks
   authors who use such tools to disclose the use in the manuscript (in the
   methods or acknowledgements); the authors remain responsible for the content.
-- The paper's "Acknowledgements" name Claude (Anthropic), used through Claude
-  Code, and say how it was used; "Data availability" repeats it, and
+- The paper's "Data and code availability" section names the AI assistance
+  (Claude, Anthropic) and says who did what;
   `AI_PROVENANCE_OddAntiholeConjecture.md` gives the details. If the submission
   form has a field for AI provenance, upload that file.
 - Every lemma of Sections 2 to 5 and the main theorem are checked by the Lean 4
