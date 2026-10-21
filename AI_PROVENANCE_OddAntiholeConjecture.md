@@ -7,7 +7,7 @@ India) and Ushashi Bhattacharya (ORCID 0009-0002-2254-3914; formerly National
 Taiwan University, Taipei 106319, Taiwan).
 
 - Paper: https://github.com/creelie/odd-antihole/blob/main/preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf
-- Lean formalisation and code: Zenodo, release v1.0.0, https://doi.org/10.5281/zenodo.23393861 (all versions: https://doi.org/10.5281/zenodo.23393860)
+- Lean formalisation and code: release v1.1.0, https://github.com/creelie/odd-antihole/releases/tag/v1.1.0
 - Repository: https://github.com/creelie/odd-antihole
 
 ## Result
@@ -34,7 +34,7 @@ Claude Code under his direction, produced the following:
 - the checking programs in C, C++, Python and Julia;
 - the figures;
 - the LaTeX text of the paper, its footnotes and its reference list (every
-  reference, the three self-citations included, was checked against the
+  reference was checked against the
   publisher's or Crossref's record);
 - this file and the submission notes.
 

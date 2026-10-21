@@ -36,16 +36,10 @@ MSC 2020: primary 05C15; secondary 05C17, 05C38.
   (`thebibliography`), so no `.bib` or `.bbl` file is needed.
   `dist/OddAntiholeConjecture_final2-tex.zip` (7 entries) and the arXiv
   tarball contain this file and the figures as PNG.
-- Declarations at the end: "Data and code availability" (the Zenodo DOI of
-  the source, the Lean formalization and the programs, the link to the PDF in
+- Declarations at the end: "Data and code availability" (the GitHub release v1.1.0 with the source, the Lean formalization and the programs, the link to the PDF in
   `preprintOddAntiholeConjecture/`, and who did what, with the AI assistance
   named there) and "Ethical declarations" (Funding: none. Competing
   interests: none). There is no separate AI section.
-- Three self-citations, each verified on Crossref, in footnotes tied to the
-  places where they bear on the text: 10.9734/arjom/2022/v18i11615 (Cayley
-  graphs and word metrics), 10.20944/preprints202606.1351.v2 (intersection
-  patterns of set families, with Ushashi Bhattacharya) and
-  10.2139/ssrn.6194939 (local-to-global gluing on networks).
 - Wiley's pages returned HTTP 403 to the session that prepared this file, so
   the details above come from search results quoting those pages; read the
   author guidelines once more before submitting.
@@ -63,3 +57,5 @@ MSC 2020: primary 05C15; secondary 05C17, 05C38.
 - Every lemma of Sections 2 to 5 and the main theorem are checked by the Lean 4
   kernel (Section 7 of the paper); the deduction of Conjecture 3 in Section 6
   is proved by hand and follows Fiujlaali and McDonald.
+- Fee: none on the subscription route; optional open access carries a charge and is not needed.
+- The journal version is in `paper/paper1/` (PDF) and `paper/paper2/` (LaTeX source zip), the same files as in `dist/`.
