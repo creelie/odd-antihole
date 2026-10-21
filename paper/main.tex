@@ -16,8 +16,7 @@
 
 \newcommand{\cbar}[1]{\overline{C_{#1}}}
 \newcommand{\df}{\operatorname{def}}
-\newcommand{\zenodoID}{10.5281/zenodo.23393861}
-\newcommand{\preprintURL}{https://github.com/creelie/odd-antihole/blob/main/preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf}
+\newcommand{\releaseURL}{https://github.com/creelie/odd-antihole/releases/tag/v1.1.0}
 
 \begin{document}
 
@@ -45,7 +44,7 @@ We prove the complete Fiujlaali--McDonald conjecture on odd antiholes unconditio
 
 \section{Introduction}
 
-All graphs are finite and simple. A \emph{hole} is an induced cycle of length at least four and an \emph{antihole} is an induced copy of the complement $\cbar{t}$ of a cycle $C_t$ with $t\ge4$\footnote{The cycle $C_t$ is the Cayley graph of the cyclic group of order $t$ with respect to a generator and its inverse. Cayley graphs with their word metrics, for Gromov hyperbolic groups, are studied in~\cite{Bha22}.}; holes and antiholes are \emph{odd} when $t$ is odd. By the Strong Perfect Graph Theorem of Chudnovsky, Robertson, Seymour and Thomas~\cite{CRST}, a graph whose chromatic number exceeds its clique number contains an odd hole or an odd antihole. Following Fiujlaali and McDonald~\cite{FM}, a graph $G$ is \emph{$k$-critical} if $\chi(G)=k$ and $\chi(G-v)<k$ for every vertex $v$.
+All graphs are finite and simple. A \emph{hole} is an induced cycle of length at least four and an \emph{antihole} is an induced copy of the complement $\cbar{t}$ of a cycle $C_t$ with $t\ge4$; holes and antiholes are \emph{odd} when $t$ is odd. By the Strong Perfect Graph Theorem of Chudnovsky, Robertson, Seymour and Thomas~\cite{CRST}, a graph whose chromatic number exceeds its clique number contains an odd hole or an odd antihole. Following Fiujlaali and McDonald~\cite{FM}, a graph $G$ is \emph{$k$-critical} if $\chi(G)=k$ and $\chi(G-v)<k$ for every vertex $v$.
 
 Fiujlaali and McDonald~\cite{FM} study the odd antiholes in critical graphs of given maximum degree. They prove that every odd antihole in a $k$-critical graph of maximum degree $\Delta$ has length at most $2(\Delta-k)+7$, and they ask whether the bound is attained only by the antihole itself.
 
@@ -76,7 +75,7 @@ Theorem~\ref{thm:main} is a sharp form of Ohba's conjecture for odd antiholes. O
 Strong chromatic-choosability is a relative of the strongly critical graphs of Stiebitz, Tuza and Voigt~\cite{STV}: a graph is \emph{strongly $k$-critical} if it is $k$-critical in the sense that every proper subgraph has smaller chromatic number, and every $(k-1)$-assignment from which it cannot be coloured is constant. Complete graphs, odd cycles, two further families of graphs on $2k-1$ vertices, and joins of strongly critical graphs with cliques are strongly critical~\cite{STV}, and Bernshteyn, Kaul, Mudrock and Sharma~\cite{BKMS} add joins of critical graphs with large cliques. For $\ell\ge4$ the antihole $\cbar{2\ell-1}$ is not among these graphs, and it is not strongly critical: if $v_0v_1\cdots v_{2\ell-2}v_0$ is the cycle, the vertices $v_0$ and $v_3$ have no common neighbour on it, so after the edge $v_0v_3$ is removed from $\cbar{2\ell-1}$ every colour class still has at most two vertices, and the chromatic number is still $\ell$.\footnote{Every graph in the two families of~\cite{STV} on $2k-1$ vertices has a vertex of degree $k-1$, whereas $\cbar{2\ell-1}$ is regular of degree $2\ell-4>\ell-1$ for $\ell\ge4$. The antihole is not a join, since its complement $C_{2\ell-1}$ is connected.} Theorem~\ref{thm:main} therefore gives an infinite family of strongly chromatic-choosable graphs that are not strongly critical; Kaul and Mudrock~\cite{KM} and Bernshteyn, Kaul, Mudrock and Sharma~\cite{BKMS} give other such graphs.
 
 \subsection*{The proof}
-A colour class of $\cbar{2\ell-1}$ is a clique of $C_{2\ell-1}$, so it is a single vertex or two consecutive vertices of the cycle. Removing two consecutive vertices from the cycle leaves a path, so the proof turns on colourings of complements of paths, and more generally of disjoint unions of paths with an odd number of vertices. On such a union we call the vertices in even positions of each path \emph{outer}. If there are $s$ outer vertices, they form a clique of size $s$ in the complement, so constant lists of size $s-1$ on the outer vertices cannot be completed to a colouring. Theorem~\ref{thm:path} shows that, for lists of size at least $s-1$, this is the only obstruction, whatever the lists of the other vertices are. The proof is an induction on the number of vertices, driven by Hall's theorem and by the choosability of complete multipartite graphs with parts of size at most two (Lemma~\ref{lem:ert}); the extremal case, a single path with $2k$ colours in all, is settled separately in Lemma~\ref{lem:key}. Theorem~\ref{thm:cycle} then closes the cycle: if two consecutive vertices share a colour $c$, the path theorem applied to the rest of the cycle with $c$ removed propagates $c$ and the lists around the cycle in steps of two, and since the cycle is odd these steps reach every vertex.\footnote{The passage from colourings of the paths obtained by cutting the cycle to a colouring of the whole cycle is a gluing step. Local-to-global gluing conditions of this kind, for signals on circuits laid out as networks, are formalised with sheaves in~\cite{Bha26}.} Figure~\ref{fig:roadmap} shows the order of the argument. Section~\ref{sec:critical} deduces Corollary~\ref{cor:conj3} by the argument of Fiujlaali and McDonald.
+A colour class of $\cbar{2\ell-1}$ is a clique of $C_{2\ell-1}$, so it is a single vertex or two consecutive vertices of the cycle. Removing two consecutive vertices from the cycle leaves a path, so the proof turns on colourings of complements of paths, and more generally of disjoint unions of paths with an odd number of vertices. On such a union we call the vertices in even positions of each path \emph{outer}. If there are $s$ outer vertices, they form a clique of size $s$ in the complement, so constant lists of size $s-1$ on the outer vertices cannot be completed to a colouring. Theorem~\ref{thm:path} shows that, for lists of size at least $s-1$, this is the only obstruction, whatever the lists of the other vertices are. The proof is an induction on the number of vertices, driven by Hall's theorem and by the choosability of complete multipartite graphs with parts of size at most two (Lemma~\ref{lem:ert}); the extremal case, a single path with $2k$ colours in all, is settled separately in Lemma~\ref{lem:key}. Theorem~\ref{thm:cycle} then closes the cycle: if two consecutive vertices share a colour $c$, the path theorem applied to the rest of the cycle with $c$ removed propagates $c$ and the lists around the cycle in steps of two, and since the cycle is odd these steps reach every vertex. Figure~\ref{fig:roadmap} shows the order of the argument. Section~\ref{sec:critical} deduces Corollary~\ref{cor:conj3} by the argument of Fiujlaali and McDonald.
 
 \begin{figure}[ht]
 \centering
@@ -93,7 +92,7 @@ Throughout, $H$ is a graph with vertex set $V$ and $L$ is a list assignment on $
 \[
 L(W)=\bigcup_{w\in W}L(w),\qquad \df(W)=|W|-|L(W)|,
 \]
-so that $\df(\varnothing)=0$. The complement of an induced subgraph $H[X]$ is the induced subgraph $\overline H[X]$, and we use this without comment. We use Hall's theorem~\cite{Hall} in the following form.\footnote{Hall's condition $|L(W)|\ge|W|$ is a condition on the intersection pattern of the family of lists. Intersection patterns of families of sets, recorded in nerve complexes, are used in~\cite{BB26} to decide how many times a region is covered.}
+so that $\df(\varnothing)=0$. The complement of an induced subgraph $H[X]$ is the induced subgraph $\overline H[X]$, and we use this without comment. We use Hall's theorem~\cite{Hall} in the following form.
 
 \begin{lemma}\label{lem:hall}
 If $|L(W)|\ge|W|$ for every $W\subseteq V$, then there is an injective map $f$ on $V$ with $f(v)\in L(v)$ for every $v$. Such a map is an $L$-colouring of $\overline H$ for every graph $H$ on $V$.
@@ -279,7 +278,7 @@ As an independent check, every assignment of lists of size $\ell-1$ to $\cbar{2\
 
 \subsection*{Data and code availability}
 \begingroup\raggedright
-The \LaTeX{} source of the paper, the Lean~4 formalization of Theorem~\ref{thm:main} and the programs of Section~\ref{sec:lean} are archived at Zenodo under doi:\href{https://doi.org/\zenodoID}{\zenodoID} \cite{archive}; the paper is available at \url{\preprintURL}. Deep Bhattacharjee carried out the computations and the Lean, Julia, C, C\texttt{++}, Python and shell verifications, and the proofs and the text were drafted, with AI assistance (Claude, Anthropic); both authors approved the final version.\par
+The \LaTeX{} source of the paper, the Lean~4 formalization of Theorem~\ref{thm:main} and the programs of Section~\ref{sec:lean} are in release~v1.1.0 of the repository \url{https://github.com/creelie/odd-antihole} \cite{archive}. Deep Bhattacharjee carried out the computations and the Lean, Julia, C, C\texttt{++}, Python and shell verifications, and the proofs and the text were drafted, with AI assistance (Claude, Anthropic); both authors approved the final version.\par
 \endgroup
 
 \subsection*{Ethical declarations}
@@ -289,16 +288,7 @@ Funding: none. Competing interests: none.
 \raggedright
 
 \bibitem{archive}
-D.~Bhattacharjee and U.~Bhattacharya, \emph{Every odd antihole is strongly chromatic-choosable: Lean formalization and programs}, Zenodo, 2026, doi:\href{https://doi.org/\zenodoID}{\zenodoID}.
-
-\bibitem{BB26}
-D.~Bhattacharjee and U.~Bhattacharya, \emph{Iterated nerve complexes for $k$-fold sensor coverage}, Preprints.org, 2026.\newline doi:\href{https://doi.org/10.20944/preprints202606.1351.v2}{10.20944/preprints202606.1351.v2}.
-
-\bibitem{Bha22}
-D.~Bhattacharjee, \emph{Establishing equivariant class $[O]$ for hyperbolic groups}, Asian Res. J. Math. \textbf{18} (2022), no.~11, 362--369, doi:\href{https://doi.org/10.9734/arjom/2022/v18i11615}{10.9734/arjom/2022/v18i11615}.
-
-\bibitem{Bha26}
-D.~Bhattacharjee, \emph{Neuromorphic Grothendieck topoi for grid-embedded circuit architectures}, SSRN, 2026, doi:\href{https://doi.org/10.2139/ssrn.6194939}{10.2139/ssrn.6194939}.
+D.~Bhattacharjee and U.~Bhattacharya, \emph{Every odd antihole is strongly chromatic-choosable: Lean formalization and programs}, release v1.1.0, 2026, \url{\releaseURL}.
 
 \bibitem{BKMS}
 A.~Bernshteyn, H.~Kaul, J.~A.~Mudrock and G.~Sharma, \emph{On strongly and robustly critical graphs}, J. Graph Theory \textbf{112} (2026), 469--483, doi:\href{https://doi.org/10.1002/jgt.70033}{10.1002/jgt.70033}.

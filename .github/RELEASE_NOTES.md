@@ -16,6 +16,8 @@ A. Fiujlaali and J. McDonald ([arXiv:2610.14241](https://arxiv.org/abs/2610.1424
 
 Lean 4 with Mathlib proves the theorem (`odd_antihole_strongly_chromatic_choosable`) and every lemma of Sections 2 to 5; it depends only on the axioms propext, Classical.choice and Quot.sound, with no `sorry`, `native_decide` or `bv_decide`. Section 6 is proved by hand. Independent checks in C, C++, Julia and Python; the C check examines every assignment of lists of size ℓ − 1, up to renaming the colours, for ℓ = 3 (4,900) and ℓ = 4 (7,897,749,769), and finds no exception.
 
+Version 1.1.0 is the journal version for Journal of Graph Theory: it cites this release instead of a DOI and leaves out the footnotes unrelated to the proof. The paper is also in `paper/paper1/` and its LaTeX source zip in `paper/paper2/`.
+
 Files:
 - `OddAntiholeConjecture_final2.pdf`: the paper
 - `OddAntiholeConjecture_final2-tex.zip`: LaTeX source (`main.tex`, figures as PNG)

@@ -8,8 +8,7 @@ rai.bhattacharya.in@gmail.com; formerly National Taiwan University).
 
 The paper: [`preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf`](preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf).
 Everything in one file: [`MasterOddAntiholeConjecture_masterzipfinal2.zip`](https://github.com/creelie/odd-antihole/raw/main/MasterOddAntiholeConjecture_masterzipfinal2.zip).
-Lean formalization and programs on Zenodo: release v1.0.0, doi:[10.5281/zenodo.23393861](https://doi.org/10.5281/zenodo.23393861);
-all versions, doi:[10.5281/zenodo.23393860](https://doi.org/10.5281/zenodo.23393860).
+Release cited by the paper: [v1.1.0](https://github.com/creelie/odd-antihole/releases/tag/v1.1.0). Journal version: [`paper/paper1/`](paper/paper1/) (PDF) and [`paper/paper2/`](paper/paper2/) (LaTeX source zip).
 
 A. Fiujlaali and J. McDonald (*Restricting odd antiholes in critical graphs
 via list coloring*, [arXiv:2610.14241](https://arxiv.org/abs/2610.14241))
