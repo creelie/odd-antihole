@@ -39,7 +39,7 @@ incomplete version of the paper appeared on Hexagon as
 
 ## Layout
 
-- `paper/main.tex`, `paper/figures/`: the LaTeX source and the four figures; `paper/main.pdf` the compiled paper (11 pages, single column).
+- `paper/main.tex`, `paper/figures/`: the LaTeX source and the four figures; `paper/main.pdf` the compiled paper (10 pages, amsart, single column).
 - `figures/`: the TikZ sources of the figures and `make_figures.sh`, which renders them to `paper/figures/` at 200 dpi.
 - `dist/`: the paper as `OddAntihole_final2.pdf`, its source zip and the arXiv tarball.
 - `checks/c/check.c`: the theorem on the antiholes with 5 and 7 vertices, by running through the matchings of the cycle and solving a bipartite matching problem for each; every assignment of lists of size l - 1 up to renaming the colours (for l = 4 with at most 8 colours by default, or every assignment with `FULL_C=1`, about fifteen minutes; the output of that run is `results/c_complete_l4.txt`), and random and near-constant assignments for l = 5, ..., 8.

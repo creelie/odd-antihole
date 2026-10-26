@@ -1,4 +1,4 @@
-Deep Bhattacharjee and Ushashi Bhattacharya, *Every odd antihole is strongly chromatic-choosable*. Final revision, single column, 11 pages.
+Deep Bhattacharjee and Ushashi Bhattacharya, *Every odd antihole is strongly chromatic-choosable*. Final revision, single column (amsart), 10 pages.
 
 The paper proves Conjecture 9 of A. Fiujlaali and J. McDonald, *Restricting odd antiholes in
 critical graphs via list coloring* (arXiv:2610.14241): for every l >= 3 the odd antihole on
