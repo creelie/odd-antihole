@@ -1,11 +1,19 @@
-# Every odd antihole is strongly chromatic-choosable - submission package v1.2.0
+Deep Bhattacharjee and Ushashi Bhattacharya, *Every odd antihole is strongly chromatic-choosable*. Final revision, single column, 11 pages.
 
-The paper proves strong chromatic-choosability for every odd antihole and deduces the extremal odd-antihole characterization in odd-hole-free critical graphs.
+The paper proves Conjecture 9 of A. Fiujlaali and J. McDonald, *Restricting odd antiholes in
+critical graphs via list coloring* (arXiv:2610.14241): for every l >= 3 the odd antihole on
+2l - 1 vertices is strongly l-chromatic-choosable, so its chromatic number is l and every
+assignment of lists of size l - 1 from which it cannot be coloured gives all vertices the same
+list. It deduces their Conjecture 3: an odd-hole-free k-critical graph of maximum degree D that
+contains an odd antihole with 2(D - k) + 7 vertices is that antihole. Every statement is proved
+by hand. A Lean 4 proof of the main theorem and programs in C, C++, Python and Julia that check
+it on the smallest antiholes are in the repository; this release builds the Lean proof and runs
+the C and C++ checks before publishing. No statement of the paper rests on them.
 
-This release prepares the existing general result for **Journal of Graph Theory**, with a portable manuscript source, cover letter, AI disclosure, Hexagon form, provenance and explicit verification scope. Authorship: Deep Bhattacharjee and Ushashi Bhattacharya.
+The results were first made public on 15 October 2026 as release v1.0.0 of this repository; an
+earlier and incomplete version of the paper appeared on Hexagon as hexagon:2610.00319.
 
-The mathematical proof bodies are unchanged. The supplied Lean development proves the main antihole theorem and its supporting path, cycle and list-colouring lemmas. The critical-graph consequence in Section 6 is a written proof and is not formalised. The successful prior repository CI is recorded in verification/previous-ci.json; no new local Lean rebuild is claimed by this package.
+Files: the paper (`OddAntihole_final2.pdf`), its LaTeX source with the figures
+(`OddAntihole_final2-tex.zip`) and the arXiv tarball (`OddAntihole_final2-arxiv.tar.gz`).
 
-The source and manuscript are in `[PAPER] package/`. Existing preprint: https://hexagonmath.org/2610.00319v1. The planned Hexagon v2 has not been submitted by this packaging work.
-
-Human-understanding declaration: some parts checked and understood by a human. No new full-human or full-Lean certification is asserted. Final upload ZIPs are assembled after the Zenodo archive DOI is confirmed and will be attached to this release.
+Contact: d.bhattacharjee@erl-forschung.de, itsdeep@live.com; for this repository egspl@proton.me.

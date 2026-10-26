@@ -1,3 +1,4 @@
+build/
 __pycache__/
 lean/.lake/
 paper/*.aux
@@ -5,9 +6,6 @@ paper/*.log
 paper/*.fls
 paper/*.fdb_latexmk
 paper/*.out
-paper/*.blg
-paper/*.spl
-paper/*.toc
 figures/*.pdf
 figures/*.aux
 figures/*.log
