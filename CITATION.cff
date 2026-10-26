@@ -17,6 +17,7 @@ license: MIT
 repository-code: "https://github.com/creelie/odd-antihole"
 url: "https://github.com/creelie/odd-antihole/releases/tag/v2.0.0"
 version: 2.0.0
+doi: 10.5281/zenodo.23663712
 date-released: 2026-10-26
 keywords:
   - list colouring
