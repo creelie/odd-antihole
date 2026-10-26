@@ -1,8 +1,0 @@
-{
-  "proof_bodies_unchanged": true,
-  "proof_environments": 7,
-  "old_source_sha256": "d2799cc46a6c14a8a529fcdf8ca82b8fa1725c74f5784906288f21b6b6c1c9f2",
-  "source_digest_at_initial_comparison": "befb63183539471eeaf35a2956358c77e27d604e7f07d6bbbc02b112ad233de2",
-  "final_manuscript_source_sha256": "4820ee7e61f224e0aff8abad4a284f8f5f427ab464c79618e82d624a58236cb1",
-  "note": "The initial comparison predates a bibliography-only arXiv version pin in the Welch paper. Mathematical proof bodies remain unchanged."
-}

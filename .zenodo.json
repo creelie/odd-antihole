@@ -1,9 +1,7 @@
 {
-  "title": "Every odd antihole is strongly chromatic-choosable",
-  "description": "<p>The paper proves strong chromatic-choosability for every odd antihole and deduces the extremal odd-antihole characterization in odd-hole-free critical graphs.</p><p>Submission package revision. The supplied Lean development proves the main antihole theorem and its supporting path, cycle and list-colouring lemmas. The critical-graph consequence in Section 6 is a written proof and is not formalised. The successful prior repository CI is recorded in verification/previous-ci.json; no new local Lean rebuild is claimed by this package.</p>",
-  "upload_type": "publication",
-  "license": "cc-by-4.0",
-  "access_right": "open",
+  "title": "Every odd antihole is strongly chromatic-choosable: paper, Lean 4 proof and checking programs",
+  "upload_type": "software",
+  "description": "<p>Final revision of the paper, single column, 11 pages, with its LaTeX source, a Lean 4 proof of the main theorem with Mathlib, and programs that check it on the smallest antiholes. The paper proves Conjecture 9 of A. Fiujlaali and J. McDonald, Restricting odd antiholes in critical graphs via list coloring (arXiv:2610.14241): for every l at least 3 the odd antihole on 2l-1 vertices is strongly l-chromatic-choosable, that is, its chromatic number is l and every assignment of lists of size l-1 from which it cannot be coloured gives all vertices the same list. It deduces their Conjecture 3: an odd-hole-free k-critical graph of maximum degree D containing an odd antihole with 2(D-k)+7 vertices is that antihole. Every statement is proved by hand; no statement rests on the programs.</p><p>The results were first made public on 15 October 2026 as release v1.0.0 of this repository (concept DOI 10.5281/zenodo.23393860). An earlier and incomplete version of the paper appeared on Hexagon as hexagon:2610.00319.</p>",
   "creators": [
     {
       "name": "Bhattacharjee, Deep",
@@ -21,26 +19,15 @@
     "odd antihole",
     "chromatic-choosability",
     "critical graph",
-    "odd hole",
-    "Lean 4",
     "05C15",
     "05C17",
     "05C38"
   ],
+  "license": "mit-license",
   "related_identifiers": [
-    {
-      "identifier": "arXiv:2610.14241",
-      "relation": "references",
-      "scheme": "arxiv"
-    },
-    {
-      "identifier": "https://hexagonmath.org/2610.00319v1",
-      "relation": "isNewVersionOf",
-      "scheme": "url"
-    }
+    {"identifier": "arXiv:2610.14241", "relation": "references", "scheme": "arxiv"},
+    {"identifier": "https://hexagonmath.org/2610.00319", "scheme": "url", "relation": "isNewVersionOf"},
+    {"identifier": "10.5281/zenodo.23393860", "scheme": "doi", "relation": "isNewVersionOf"}
   ],
-  "language": "eng",
-  "version": "1.2.0",
-  "notes": "Prepared for Journal of Graph Theory. Manuscript and new submission materials: CC BY 4.0; original code: MIT. Existing Hexagon preprint: https://hexagonmath.org/2610.00319v1. Human-understanding declaration retained: some parts.",
-  "publication_type": "preprint"
+  "access_right": "open"
 }

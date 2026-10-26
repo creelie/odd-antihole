@@ -1,7 +1,0 @@
-{
-  "exhaustive_l3_assignments": 4900,
-  "sampled_assignments_l3_to_l6": 320,
-  "random_seed": 26102026,
-  "status": "passed",
-  "general_proof": false
-}

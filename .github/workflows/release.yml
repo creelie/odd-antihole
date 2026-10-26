@@ -1,30 +1,31 @@
 name: release
 
-# Run by hand from the Actions tab (or the API) after the PR is merged: it builds
-# the Lean project and checks its axioms, runs the C check on every assignment at
-# l = 4 and the C++ check, checks the release files, tags the chosen commit and
-# publishes a GitHub release with the files in dist/ and the notes in
-# .github/RELEASE_NOTES.md. Zenodo archives the release and mints a DOI when the
-# repository is switched on at https://zenodo.org/account/settings/github/. The
-# Python and Julia checks run in verify.yml on every pull request.
+# Run by hand from the Actions tab after the pull request is merged. It builds the Lean proof
+# and checks its axioms, runs the complete C check at l = 4 and the C++ and Python checks, then
+# publishes a GitHub release with the paper files in dist/ and the notes in
+# .github/RELEASE_NOTES.md.
 
 on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Release tag, e.g. v1.1.0"
+        description: "Release tag, e.g. v2.0.0"
         required: true
-        default: "v1.1.0"
+        default: "v2.0.0"
       target:
         description: "Branch or commit to tag"
         required: true
         default: "main"
+      title:
+        description: "Release title"
+        required: true
+        default: "Every odd antihole is strongly chromatic-choosable"
 
 permissions:
   contents: write
 
 jobs:
-  release:
+  checks:
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
@@ -36,25 +37,31 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
             | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-      - name: Lean kernel check and axioms; complete C check at l = 4; C++ check
-        run: CHECKS="c cpp" FULL_C=1 bash scripts/run_all.sh
-      - name: Check the release files
+      - name: Lean proof and axioms, complete C check at l = 4, C++ and Python checks
+        run: FULL_C=1 ./run_all.sh
+
+  release:
+    needs: checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.target }}
+      - name: Check the paper files
         run: |
-          for f in dist/OddAntiholeConjecture_final2.pdf \
-                   dist/OddAntiholeConjecture_final2-tex.zip \
-                   dist/OddAntiholeConjecture_final2-arxiv.tar.gz \
-                   preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf \
-                   MasterOddAntiholeConjecture_masterzipfinal2.zip; do
+          for f in dist/OddAntihole_final2.pdf \
+                   dist/OddAntihole_final2-tex.zip \
+                   dist/OddAntihole_final2-arxiv.tar.gz; do
             test -s "$f" || { echo "missing $f"; exit 1; }
           done
-          test "$(ls preprintOddAntiholeConjecture)" = OddAntiholeConjecture.pdf
       - name: Publish the release
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ inputs.tag }}
           TARGET: ${{ inputs.target }}
+          TITLE: ${{ inputs.title }}
         run: |
-          gh release create "$TAG" dist/* \
+          gh release create "$TAG" dist/OddAntihole_final2* \
             --target "$TARGET" \
-            --title "$TAG: Every odd antihole is strongly chromatic-choosable" \
+            --title "$TAG: $TITLE" \
             --notes-file .github/RELEASE_NOTES.md

@@ -1,125 +1,82 @@
-## Submission package v1.2.0
-
-The current prepared package for Journal of Graph Theory is in [`[PAPER] package`](%5BPAPER%5D%20package/README.md). See its formalisation scope, provenance and archival receipt. The mathematical proof bodies are unchanged. Older `dist/` archives retain the earlier release files; use `[PAPER] package/` for the present submission.
-
 # Every odd antihole is strongly chromatic-choosable
 
-Authors: Deep Bhattacharjee (corresponding author; ORCID 0000-0003-0466-750X;
-itsdeep@live.com, d.bhattacharjee@erl-forschung.de; formerly EGSPL, Bhubaneswar,
-and formerly University of Calcutta, Senate House, 87/1 College Street, Kolkata
-700073) and Ushashi Bhattacharya (ORCID 0009-0002-2254-3914;
-rai.bhattacharya.in@gmail.com; formerly National Taiwan University).
+Deep Bhattacharjee and Ushashi Bhattacharya. Final revision, 26 October 2026.
 
-The paper: [`preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf`](preprintOddAntiholeConjecture/OddAntiholeConjecture.pdf).
-Everything in one file: [`MasterOddAntiholeConjecture_masterzipfinal2.zip`](https://github.com/creelie/odd-antihole/raw/main/MasterOddAntiholeConjecture_masterzipfinal2.zip).
-Release cited by the paper: [v1.1.0](https://github.com/creelie/odd-antihole/releases/tag/v1.1.0). Journal version: [`paper/paper1/`](paper/paper1/) (PDF) and [`paper/paper2/`](paper/paper2/) (LaTeX source zip).
+A. Fiujlaali and J. McDonald (*Restricting odd antiholes in critical graphs via list
+coloring*, arXiv:2610.14241) proved that every odd antihole in a k-critical graph of
+maximum degree D has at most 2(D - k) + 7 vertices, and conjectured:
 
-A. Fiujlaali and J. McDonald (*Restricting odd antiholes in critical graphs
-via list coloring*, [arXiv:2610.14241](https://arxiv.org/abs/2610.14241))
-conjectured:
+- **Conjecture 9.** For every l >= 3 the odd antihole on 2l - 1 vertices is strongly
+  l-chromatic-choosable: its chromatic number is l, and every assignment of lists of size
+  l - 1 from which it cannot be coloured gives all vertices the same list.
+- **Conjecture 3.** An odd-hole-free k-critical graph of maximum degree D that contains an
+  odd antihole with 2(D - k) + 7 vertices is that antihole.
 
-- **Conjecture 9.** For every ℓ ≥ 3 the odd antihole C̄_{2ℓ−1} is strongly
-  ℓ-chromatic-choosable: its chromatic number is ℓ, and every assignment of
-  lists of size ℓ − 1 from which it cannot be coloured gives all vertices the
-  same list.
-- **Conjecture 3.** An odd-hole-free k-critical graph of maximum degree Δ that
-  contains an odd antihole of length 2(Δ − k) + 7 is that antihole.
+They proved Conjecture 9 when all the lists lie in a common set of l colours (their Theorem 8),
+that Conjecture 9 for l implies Conjecture 3 whenever D - k = l - 4 (their Theorem 10), and
+Conjecture 3 for D <= k and D >= 2k - 5 (their Theorem 4); the first open case was
+(k, D) = (7, 8), that is l = 5.
 
-They proved that Conjecture 9 for ℓ implies Conjecture 3 whenever
-Δ − k = ℓ − 4 (their Theorem 10), and Conjecture 3 for Δ ≤ k and Δ ≥ 2k − 5
-(their Theorem 4); the first open case was (k, Δ) = (7, 8), that is ℓ = 5.
+The paper proves Conjecture 9 for every l >= 3 with no restriction on the lists (Theorem 1.1),
+and deduces Conjecture 3 for all k and D (Corollary 1.2). The proof works with complements of
+disjoint unions of paths with an odd number of vertices: the vertices in even positions form a
+clique in the complement, so equal lists of one colour fewer than their number cannot be
+completed, and the path theorem (Theorem 4.1) shows by induction, through Hall's theorem and
+the theorem of Erdős, Rubin and Taylor, that this is the only obstruction, with the extremal
+case of a single path settled by a lemma on minimal tight sets (Lemma 3.1). The cycle theorem
+(Theorem 5.2) carries a colour shared by two consecutive vertices around the odd cycle in
+steps of two. Every statement is proved by hand; the programs here only check the theorem on
+the smallest antiholes, and no statement of the paper rests on them.
 
-**Theorem.** For every ℓ ≥ 3, the odd antihole C̄_{2ℓ−1} is strongly
-ℓ-chromatic-choosable. More precisely, if every list has at least ℓ − 1 colours
-and C̄_{2ℓ−1} cannot be coloured from the lists, then all lists are one set of
-ℓ − 1 colours.
+The results were first made public on 15 October 2026 as release v1.0.0 of this repository
+(Zenodo [10.5281/zenodo.23393861](https://doi.org/10.5281/zenodo.23393861); later versions
+[10.5281/zenodo.23541224](https://doi.org/10.5281/zenodo.23541224) and
+[10.5281/zenodo.23662269](https://doi.org/10.5281/zenodo.23662269), concept DOI
+[10.5281/zenodo.23393860](https://doi.org/10.5281/zenodo.23393860)); an earlier and
+incomplete version of the paper appeared on Hexagon as
+[hexagon:2610.00319](https://hexagonmath.org/2610.00319) on 17 October 2026.
 
-**Corollary.** Conjecture 3 holds for all k and Δ.
+## Layout
 
-The proof (Sections 2 to 5 of the paper) works with complements of disjoint
-unions of odd paths. If such a union has s outer vertices (the vertices in even
-positions of each path), they form a clique in the complement, so constant
-lists of size s − 1 on them cannot be completed. The path theorem (Theorem 4.1)
-shows that, with lists of size at least s − 1, this is the only obstruction. Its
-proof is an induction driven by Hall's theorem and the Erdős–Rubin–Taylor
-theorem on complete multipartite graphs with parts of size at most two, with the
-extremal case of a single path with 2k colours settled by a separate lemma on
-minimal tight sets (Lemma 3.1). The cycle theorem (Theorem 5.2) then follows:
-if two consecutive vertices of the cycle share a colour c, the path theorem
-applied to the rest of the cycle with c removed carries c and the lists around
-the cycle in steps of two. Section 6 gives the deduction of Conjecture 3, which
-is the argument of Fiujlaali and McDonald.
-
-For ℓ ≥ 4 the antihole is not edge-critical (removing the edge between v_0 and
-v_3 leaves the chromatic number at ℓ), so it is not strongly critical in the
-sense of Stiebitz, Tuza and Voigt: the theorem gives an infinite family of
-strongly chromatic-choosable graphs that are not strongly critical.
-
-## What is checked by Lean
-
-The Lean 4 project in `lean/` (Lean v4.34.1, Mathlib v4.34.1) proves the
-theorem, with no axioms beyond `propext`, `Classical.choice` and `Quot.sound`
-and with no `sorry`, `native_decide` or `bv_decide`:
-
-```lean
-def oddAntihole (m : ℕ) : SimpleGraph (Fin (2 * m + 1)) :=
-  (SimpleGraph.cycleGraph (2 * m + 1))ᶜ
-
-def ListColorable {V : Type*} (G : SimpleGraph V) {β : Type*} (L : V → Finset β) : Prop :=
-  ∃ f : V → β, (∀ v, f v ∈ L v) ∧ ∀ u v, G.Adj u v → f u ≠ f v
-
-def StronglyChromaticChoosable {V : Type*} (G : SimpleGraph V) (ℓ : ℕ) : Prop :=
-  G.chromaticNumber = ℓ ∧
-    ∀ (β : Type u) [DecidableEq β] (L : V → Finset β), (∀ v, (L v).card = ℓ - 1) →
-      ¬ ListColorable G L → ∀ u v, L u = L v
-
-theorem odd_antihole_strongly_chromatic_choosable (ℓ : ℕ) (hℓ : 3 ≤ ℓ) :
-    StronglyChromaticChoosable.{u} (oddAntihole (ℓ - 1)) ℓ
-```
-
-All the lemmas of Sections 2 to 5 of the paper are formalized: Hall's theorem
-in the form used (`hall_sdr`), the Erdős–Rubin–Taylor lemma (`ert`), the key
-lemma on a single path (`star`, with `cross`, `side` and `walk` for its steps),
-the path theorem (`gpath`), the cycle theorem (`cycle_main`) and the chromatic
-number (`antihole_chromaticNumber`). The deduction of Conjecture 3 (Section 6
-of the paper) is not formalized.
-
-## Contents
-
-| Path | Contents |
-|---|---|
-| `preprintOddAntiholeConjecture/` | the paper as a PDF, the only file in the folder |
-| `paper/` | LaTeX source (`main.tex`, `amsart`), the figures as PNG and the compiled `main.pdf` |
-| `figures/` | TikZ sources of the four schematic figures and `make_figures.sh`, which writes them to `paper/figures/` |
-| `lean/OddAntihole/Basic.lean` | colourings of complements, Hall's theorem, the Erdős–Rubin–Taylor lemma |
-| `lean/OddAntihole/Paths.lean` | odd linear forests, deficiency, the end-pair step |
-| `lean/OddAntihole/KeyLemma.lean` | the key lemma on a single path (minimal tight sets) |
-| `lean/OddAntihole/PathTheorem.lean` | the path theorem |
-| `lean/OddAntihole/Cycle.lean` | the cycle theorem |
-| `lean/OddAntihole/Main.lean` | the odd antihole, its chromatic number and the main theorem |
-| `lean/Axioms.lean` | prints the axioms of the main theorem |
-| `checks/` | independent checks in Python, Julia, C and C++: every assignment of lists of size ℓ − 1 for ℓ = 3 and (in C, with the argument 21) ℓ = 4, up to renaming the colours, and random assignments for ℓ = 5 to 8 |
-| `results/c_complete_l4.txt` | output of the complete C check: 7,897,749,769 assignments at ℓ = 4, no failures |
-| `scripts/run_all.sh` | builds the Lean project, checks the axioms and runs the four checks |
-| `scripts/build_paper.sh` | builds the files in `dist/`, the preprint folder and the master zip |
-| `journal/JOURNAL.md` | target journal (Journal of Graph Theory), format rules and AI policy |
-| `AI_PROVENANCE_OddAntiholeConjecture.md` | what the AI tool did and what the authors checked |
-| `dist/` | `OddAntiholeConjecture_final2.pdf`, the LaTeX source zip `_final2-tex.zip` (with the figures as PNG) and the arXiv tarball `_final2-arxiv.tar.gz` |
-| `MasterOddAntiholeConjecture_masterzipfinal2.zip` | every file of the repository with `dist/` and the preprint folder |
-| `.github/workflows/` | `verify.yml` (Lean, the four checks and the paper on every pull request) and `release.yml` (runs the checks and publishes a release) |
+- `paper/main.tex`, `paper/figures/`: the LaTeX source and the four figures; `paper/main.pdf` the compiled paper (11 pages, single column).
+- `figures/`: the TikZ sources of the figures and `make_figures.sh`, which renders them to `paper/figures/` at 200 dpi.
+- `dist/`: the paper as `OddAntihole_final2.pdf`, its source zip and the arXiv tarball.
+- `checks/c/check.c`: the theorem on the antiholes with 5 and 7 vertices, by running through the matchings of the cycle and solving a bipartite matching problem for each; every assignment of lists of size l - 1 up to renaming the colours (for l = 4 with at most 8 colours by default, or every assignment with `FULL_C=1`, about fifteen minutes; the output of that run is `results/c_complete_l4.txt`), and random and near-constant assignments for l = 5, ..., 8.
+- `checks/cpp/check.cpp`: the same statement by a depth-first search in a different order; every assignment for l = 3, and for l = 4 with at most 7 colours.
+- `checks/python/check.py`, `checks/julia/check.jl`: generic list colouring with every edge checked; l = 3 in full and l = 4 with at most 5 or 6 colours, random assignments for l = 5, 6.
+- `lean/`: a proof of Theorem 1.1 in Lean 4 (v4.34.1) with Mathlib, following Sections 2 to 5 of the paper; the main theorem `odd_antihole_strongly_chromatic_choosable` depends only on `propext`, `Classical.choice` and `Quot.sound`, with no `sorry`. Built with `lake build` in `lean/`.
+- `run_all.sh`: runs all of them.
 
 ## Running the checks
 
-```sh
-bash scripts/run_all.sh                       # Lean and the four checks
-SKIP_LEAN=1 bash scripts/run_all.sh           # the four checks only
-SKIP_LEAN=1 CHECKS=c FULL_C=1 bash scripts/run_all.sh   # every assignment at ℓ = 4 (about fifteen minutes)
-cd lean && lake exe cache get && lake build   # Lean only; prints the axioms of the main theorem
-```
+    ./run_all.sh
 
-Tools: elan (the toolchain is pinned in `lean/lean-toolchain`), Python 3,
-Julia, a C compiler, a C++20 compiler, and pdflatex for the paper.
+Requirements: a C compiler, a C++20 compiler and Python 3. Julia and Lean 4 (elan) are used when
+they are on the PATH and skipped otherwise; `FULL_C=1` runs the complete C check at l = 4.
 
-## License
+## Releases
 
-MIT (see `LICENSE`).
+Releases are published by the workflow `release.yml` from the Actions tab.
+Each release carries the paper files of `dist/`.
+
+| Release | DOI |
+| --- | --- |
+| v2.0.0 | to be recorded |
+| v1.2.0 | [10.5281/zenodo.23662269](https://doi.org/10.5281/zenodo.23662269) |
+| v1.1.0 | [10.5281/zenodo.23541224](https://doi.org/10.5281/zenodo.23541224) |
+| v1.0.0 | [10.5281/zenodo.23393861](https://doi.org/10.5281/zenodo.23393861) |
+
+Concept DOI of all versions: [10.5281/zenodo.23393860](https://doi.org/10.5281/zenodo.23393860).
+
+## Authors
+
+Deep Bhattacharjee (corresponding author), Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India.
+Emails: d.bhattacharjee@erl-forschung.de, itsdeep@live.com, egspl@proton.me (for questions about this repository).
+ORCID: 0000-0003-0466-750X.
+
+Ushashi Bhattacharya, Formerly, National Taiwan University, Taipei 106319, Taiwan.
+Email: rai.bhattacharya.in@gmail.com. ORCID: 0009-0002-2254-3914.
+
+## Licence
+
+MIT, see `LICENSE`.
