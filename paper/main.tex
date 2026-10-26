@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper,reqno]{amsart}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -8,6 +8,7 @@
 \usepackage[margin=28mm]{geometry}
 \usepackage{xurl}
 \usepackage[hidelinks]{hyperref}
+\usepackage{orcidlink}
 \usepackage{microtype}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -25,34 +26,34 @@
 \newcommand{\df}{\operatorname{def}}
 \hypersetup{pdftitle={Every odd antihole is strongly chromatic-choosable},pdfauthor={Deep Bhattacharjee, Ushashi Bhattacharya}}
 
-\title{Every odd antihole is strongly chromatic-choosable}
+\title[Every odd antihole is strongly chromatic-choosable]{Every odd antihole is strongly chromatic-choosable}
 
-\author{Deep Bhattacharjee\thanks{Corresponding author. Email: \href{mailto:d.bhattacharjee@erl-forschung.de}{d.bhattacharjee@erl-forschung.de}, \href{mailto:itsdeep@live.com}{itsdeep@live.com}, \href{mailto:egspl@proton.me}{egspl@proton.me}. ORCID: \href{https://orcid.org/0000-0003-0466-750X}{0000-0003-0466-750X}.}\\[2pt]
-\normalsize Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL),\\
-\normalsize Bhubaneswar, Odisha 751030, India\\[1pt]
-\normalsize Formerly, University of Calcutta, Senate House, 87/1 College Street,\\
-\normalsize Kolkata 700073, West Bengal, India
-\and
-Ushashi Bhattacharya\thanks{Email: \href{mailto:rai.bhattacharya.in@gmail.com}{rai.bhattacharya.in@gmail.com}. ORCID: \href{https://orcid.org/0009-0002-2254-3914}{0009-0002-2254-3914}.}\\[2pt]
-\normalsize Formerly, National Taiwan University,\\
-\normalsize Taipei 106319, Taiwan}
+\author{Deep Bhattacharjee\,\orcidlink{0000-0003-0466-750X}}
+\address{Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India}
+\address{Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India}
+\email{d.bhattacharjee@erl-forschung.de}
+\email{itsdeep@live.com}
+\email{egspl@proton.me}
+\thanks{\sloppy Corresponding author: Deep Bhattacharjee. Email: \href{mailto:d.bhattacharjee@erl-forschung.de}{d.bhattacharjee@erl-forschung.de}, \href{mailto:itsdeep@live.com}{itsdeep@live.com}, \href{mailto:egspl@proton.me}{egspl@proton.me}; ORCID \href{https://orcid.org/0000-0003-0466-750X}{0000-0003-0466-750X}.}
+\author{Ushashi Bhattacharya\,\orcidlink{0009-0002-2254-3914}}
+\address{Formerly, National Taiwan University, Taipei 106319, Taiwan}
+\email{rai.bhattacharya.in@gmail.com}
+\thanks{Ushashi Bhattacharya: email \href{mailto:rai.bhattacharya.in@gmail.com}{rai.bhattacharya.in@gmail.com}; ORCID \href{https://orcid.org/0009-0002-2254-3914}{0009-0002-2254-3914}.}
 
+\subjclass[2020]{05C15; 05C17; 05C38}
+\keywords{list colouring; odd antihole; chromatic-choosability; critical graph}
 \date{26 October 2026}
 
 \begin{document}
-
-\maketitle
 
 \begin{abstract}
 \itshape
 A hole in a graph is an induced cycle of length at least four, and an antihole is the complement of a hole. Odd holes and odd antiholes are the graphs that, by the strong perfect graph theorem, force the chromatic number above the clique number. Fiujlaali and McDonald studied the odd antiholes inside $k$-critical graphs of maximum degree $\Delta$, proved that such an antihole has at most $2(\Delta-k)+7$ vertices, and conjectured that this bound is attained only when the graph is the antihole itself, provided the graph has no odd hole. They reduced this to a statement about list colouring: for every $\ell\ge3$, the odd antihole on $2\ell-1$ vertices has chromatic number $\ell$, and the only assignments of lists of $\ell-1$ colours from which it cannot be coloured are those in which all lists are equal. This is their Conjecture~9, and they proved it when all the lists lie in a common set of $\ell$ colours. We prove it for every $\ell$ with no restriction on the lists, and we deduce their Conjecture~3 for all $k$ and $\Delta$. The proof works with the complements of disjoint unions of paths with an odd number of vertices. The vertices in even positions of the paths form a clique in the complement, so equal lists of one colour fewer than the number of these vertices cannot be completed; we show by induction, using Hall's theorem and the theorem of Erd\H{o}s, Rubin and Taylor on complete multipartite graphs with parts of size at most two, that this is the only obstruction, and a separate lemma on minimal tight sets settles the extremal case of a single path. The cycle is then closed by carrying a colour shared by two consecutive vertices around the odd cycle in steps of two. The theorem also gives an infinite family of strongly chromatic-choosable graphs that are not strongly critical in the sense of Stiebitz, Tuza and Voigt. Every statement is proved by hand.
 \end{abstract}
 
-\medskip
-\noindent\textbf{Keywords.} list colouring; odd antihole; chromatic-choosability; critical graph.
+\maketitle
 
-\smallskip
-\noindent\textbf{MSC 2020.} 05C15; 05C17; 05C38.
+
 
 \medskip
 \begin{quote}
@@ -295,6 +296,7 @@ so $G[Z]$ can be coloured greedily from the lists $M(z)$. This gives a proper co
 
 \subsection*{Data availability} The proofs in this paper are complete by hand. The source of the paper and programs that check Theorem~\ref{thm:main} for $\ell=3$ and $\ell=4$, by examining every assignment of lists of size $\ell-1$ up to renaming the colours, are in release \texttt{v2.0.0} of the repository named in the note under the abstract, archived as \href{https://doi.org/10.5281/zenodo.23663712}{10.5281/zenodo.23663712}; the paper does not depend on them.
 
+\begingroup\sloppy\emergencystretch=3em\hbadness=5000
 \begin{thebibliography}{99}
 
 \bibitem{BKMS}
@@ -340,5 +342,6 @@ K.~Ohba, On chromatic-choosable graphs, J. Graph Theory 40 (2002), no.~2, 130--1
 M.~Stiebitz, Z.~Tuza and M.~Voigt, On list critical graphs, Discrete Math. 309 (2009), no.~15, 4931--4941. \href{https://doi.org/10.1016/j.disc.2008.05.021}{doi:10.1016/j.disc.2008.05.021}.
 
 \end{thebibliography}
+\endgroup
 
 \end{document}
