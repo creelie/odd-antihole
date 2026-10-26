@@ -1,3 +1,7 @@
+## Submission package v1.2.0
+
+The current prepared package for Journal of Graph Theory is in [`[PAPER] package`](%5BPAPER%5D%20package/README.md). See its formalisation scope, provenance and archival receipt. The mathematical proof bodies are unchanged. Older `dist/` archives retain the earlier release files; use `[PAPER] package/` for the present submission.
+
 # Every odd antihole is strongly chromatic-choosable
 
 Authors: Deep Bhattacharjee (corresponding author; ORCID 0000-0003-0466-750X;
