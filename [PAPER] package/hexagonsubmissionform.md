@@ -31,4 +31,4 @@ License: CC BY 4.0 for the manuscript and this submission material; original cod
 Existing preprint: https://hexagonmath.org/2610.00319v1
 Intended next version: v2, pending the author's upload. Do not represent the intended version as already published.
 Release: https://github.com/creelie/odd-antihole/releases/tag/v1.2.0
-Zenodo DOI: see RELEASE-DOI.md once confirmed.
+Zenodo DOI: https://doi.org/10.5281/zenodo.23662269

@@ -1,0 +1,18 @@
+{
+  "doi": "10.5281/zenodo.23662269",
+  "url": "https://doi.org/10.5281/zenodo.23662269",
+  "record_id": 23662269,
+  "conceptrecid": "23393860",
+  "version": "1.2.0",
+  "github_release": "https://github.com/creelie/odd-antihole/releases/tag/v1.2.0",
+  "frozen_commit": "da855151dd38a8792a4ab6aa88dd8fa4e6184392",
+  "archive": {
+    "file": "creelie/odd-antihole-v1.2.0.zip",
+    "bytes": 7721293,
+    "checksum": "md5:cd7582381889ea7120f4a56f7f6535e2",
+    "frozen_files_verified": 73
+  },
+  "published": true,
+  "verified_at_utc": "2026-10-26T10:01:56.551273+00:00",
+  "final_zip_creation_authorized_by_confirmed_doi": true
+}
