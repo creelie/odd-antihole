@@ -31,7 +31,8 @@ the smallest antiholes, and no statement of the paper rests on them.
 The results were first made public on 15 October 2026 as release v1.0.0 of this repository
 (Zenodo [10.5281/zenodo.23393861](https://doi.org/10.5281/zenodo.23393861); later versions
 [10.5281/zenodo.23541224](https://doi.org/10.5281/zenodo.23541224) and
-[10.5281/zenodo.23662269](https://doi.org/10.5281/zenodo.23662269), concept DOI
+[10.5281/zenodo.23662269](https://doi.org/10.5281/zenodo.23662269); this revision
+[10.5281/zenodo.23663712](https://doi.org/10.5281/zenodo.23663712), concept DOI
 [10.5281/zenodo.23393860](https://doi.org/10.5281/zenodo.23393860)); an earlier and
 incomplete version of the paper appeared on Hexagon as
 [hexagon:2610.00319](https://hexagonmath.org/2610.00319) on 17 October 2026.
@@ -61,7 +62,7 @@ Each release carries the paper files of `dist/`.
 
 | Release | DOI |
 | --- | --- |
-| v2.0.0 | to be recorded |
+| v2.0.0 | [10.5281/zenodo.23663712](https://doi.org/10.5281/zenodo.23663712) |
 | v1.2.0 | [10.5281/zenodo.23662269](https://doi.org/10.5281/zenodo.23662269) |
 | v1.1.0 | [10.5281/zenodo.23541224](https://doi.org/10.5281/zenodo.23541224) |
 | v1.0.0 | [10.5281/zenodo.23393861](https://doi.org/10.5281/zenodo.23393861) |
